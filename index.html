@@ -30,6 +30,281 @@
            }
        });
       });
+  
+map.on('load', () => {
+map.addSource('places', {
+// This GeoJSON contains features that include an "icon"
+// property. The value of the "icon" property corresponds
+// to an image in the Mapbox Streets style's sprite.
+'type': 'geojson',
+'data': {
+'type': 'FeatureCollection',
+'features':  [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.41805886,48.85171696 ]
+    },
+    "properties": {
+    "Name":"\"GO\"             MONTREUIL Gaumont",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Gold",
+    "Address":"30 - 34 Avenue Léon Gaumont, 75020 Paris et 53 - 55 Rue du Préfet Claude Érignac / 40 Rue Armand Carrel",
+    "Postal/Zip_code":"93100"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.241635,53.350165 ]
+    },
+    "properties": {
+    "Name":"Spencer Place",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"Spencer Place, Spencer Dock",
+    "Postal/Zip_code":"Dublin 1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.55180697,53.79195368 ]
+    },
+    "properties": {
+    "Name":"Globe Point",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"Globe Road",
+    "Postal/Zip_code":"LS11 5QG"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.55180697,53.79195368 ]
+    },
+    "properties": {
+    "Name":"One Globe Square",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"Globe Road",
+    "Postal/Zip_code":"LS11 5QG"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.58916,51.44952 ]
+    },
+    "properties": {
+    "Name":"One Portwall Square",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"One Portwall Square",
+    "Postal/Zip_code":"BS1 6BH"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.13436,50.82523 ]
+    },
+    "properties": {
+    "Name":"Circus Street - D&R",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"Circus Street",
+    "Postal/Zip_code":"BN2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.5766676,51.45023417 ]
+    },
+    "properties": {
+    "Name":"No. 2 The Distillery",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"Avon Street",
+    "Postal/Zip_code":"BS2 0QH"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.62862,54.97182 ]
+    },
+    "properties": {
+    "Name":"The Spark",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"Corporation Street",
+    "Postal/Zip_code":"NE4 5SQ"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.25506,53.47875 ]
+    },
+    "properties": {
+    "Name":"Old Granada Studios",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"2 Atherton Street",
+    "Postal/Zip_code":"M3 3BE"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.13811,51.51171 ]
+    },
+    "properties": {
+    "Name":"30-31 Golden Square",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Gold",
+    "Address":"30-31 Golden Square",
+    "Postal/Zip_code":"W1F 9LD"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.08766,51.51846 ]
+    },
+    "properties": {
+    "Name":"101 Moorgate",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"101 Moorgate",
+    "Postal/Zip_code":"EC2M 6SL"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.23001,53.347625 ]
+    },
+    "properties": {
+    "Name":"Coopers Cross 1",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"Mayor Street Upper, North Dock",
+    "Postal/Zip_code":"D01 DR94"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.23001,53.347625 ]
+    },
+    "properties": {
+    "Name":"Coopers Cross 2",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"Mayor Street Upper, North Dock",
+    "Postal/Zip_code":"D01 DR94"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.93442295,54.59505579 ]
+    },
+    "properties": {
+    "Name":"The Vantage",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Gold",
+    "Address":"32-36 Great Victoria Street",
+    "Postal/Zip_code":"BT2 7BA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.25842453,53.33426575 ]
+    },
+    "properties": {
+    "Name":"Cadenza",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"Earlsfort Terrace",
+    "Postal/Zip_code":"D2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.25833642,53.33944801 ]
+    },
+    "properties": {
+    "Name":"16 St Stephen's Green",
+    "Certification Type":"WiredScore Office",
+    "Certification_Level":"Platinum",
+    "Address":"16 Saint Stephen's Green",
+    "Postal/Zip_code":"D02 KF34"
+    }
+  }
+]
+}
+});
+  
+  map.addLayer({
+'id': 'places',
+'type': 'symbol',
+'source': 'places'
+}
+});
+ 
+// When a click event occurs on a feature in the places layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click', 'places', (e) => {
+// Copy coordinates array.
+const coordinates = e.features[0].geometry.coordinates.slice();
+const description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(coordinates)
+.setHTML(description)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'places', () => {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'places', () => {
+map.getCanvas().style.cursor = '';
+});
+});
     </script>
   </body>
 </html>
