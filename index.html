@@ -1,6 +1,19 @@
 <html>
   <head>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
     <title>Hello World</title>
   </head>
-  <h1>Map</h1>
+  <body>
+    <h1>Map</h1>
+    <h2>update</h2>
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoid2lyZWRzY29yZXN0cHIiLCJhIjoiY2xjMGhlZ3d3MDMwODNub2RzdWU2dnM5YiJ9.YNzXLUYHiQKcUvdhjJZbkQ';
+      var map = new mapboxgl.Map(
+        {container: 'map',
+         style: 'mapbox://styles/mapbox/streets-v11'
+        });
+    </script>
+  </body>
 </html>
