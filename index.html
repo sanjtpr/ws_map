@@ -5,24 +5,22 @@
     <title>Hello World</title>
   </head>
   <body>
-    <h1>Map</h1>
-    <div id='map' style='width: 90%; height: 90%;'></div>
+  <!-- Load the `mapbox-gl-geocoder` plugin. -->
+	<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <div id='map' style='width: 100%; height: 90%;'></div>
     
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1Ijoid2lyZWRzY29yZXN0cHIiLCJhIjoiY2xiemRtdWdyMGpqaTNycDg5MWxyd2x6ZiJ9.AkXAQbpFZrmXzk1cqqqNfg';
 const map = new mapboxgl.Map({
 container: 'map',
 // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-style: 'mapbox://styles/mapbox/streets-v12',
+style: 'mapbox://styles/mapbox/outdoors-v12',
 center: [-74.895886, 40.604579],
-zoom: 3
+zoom: 5
 });
  
 map.on('load', () => {
 map.addSource('places', {
-// This GeoJSON contains features that include an "icon"
-// property. The value of the "icon" property corresponds
-// to an image in the Mapbox Streets style's sprite.
 'type': 'geojson',
 'data': 
 {
@@ -721,7 +719,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CMSk6AAH",
     "cert_desc":"St George's House<br />St George's House<br />SW19 4DR<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -817,7 +815,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jQhMAAU",
     "cert_desc":"Styne House<br />Hatch Street Upper<br />Dublin 2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -829,7 +827,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jQhNAAU",
     "cert_desc":"Riverside Two<br />Sir John Rogerson's Quay\nGrand Canal Dock<br />Dublin 2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -841,7 +839,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jQhOAAU",
     "cert_desc":"1 Grand Canal Square<br />1 Grand Canal Square\nGrand Canal Docks<br />Dublin 2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -853,7 +851,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jQhPAAU",
     "cert_desc":"The Exchange<br />6 George’s Dock\nNorth Dock<br />1<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -889,7 +887,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CKl5dAAD",
     "cert_desc":"Battersea Studios, Building 2<br />82 Silverthorne Road<br />SW8 3HE<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -913,7 +911,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jQhJAAU",
     "cert_desc":"6 Earlsfort<br />Block D, Earlsfort Centre\nEarlsfort Terrace<br />Dublin 2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -997,7 +995,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CKnShAAL",
     "cert_desc":"One Temple Row<br />1 Temple Row<br />B2 5LG<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1093,7 +1091,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CL0lKAAT",
     "cert_desc":"II Exchange Square<br />North Fourth Street<br />MK9 1HL<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1105,7 +1103,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061n00000U5LHnAAN",
     "cert_desc":"10 Molesworth Street<br />10 Molesworth Street<br />Dublin 2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1273,7 +1271,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MfcqrAAB",
     "cert_desc":"One Gateway<br />East Wall Road<br />Dublin 1<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1357,7 +1355,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000OhdheAAB",
     "cert_desc":"Building 4, The Heights, Weybridge<br />The Heights\nWellington Way<br />KT13 0NY<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1441,7 +1439,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jR81AAE",
     "cert_desc":"Bond House<br />The Bourse\nBoar Lane<br />LS1 5EQ<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1465,7 +1463,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLmBiAAL",
     "cert_desc":"Sterling House<br />The Bourse\nBoar Lane<br />LS1 5EQ<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1477,7 +1475,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRpBAAX",
     "cert_desc":"The Porter Building<br />1 Brunel Way<br />SL1 1XL<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1489,7 +1487,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jR6FAAU",
     "cert_desc":"Equity House<br />The Bourse\nBoar Lane<br />LS1 5EQ<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1513,7 +1511,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLm6bAAD",
     "cert_desc":"340 Deansgate<br />340 Deansgate<br />M3 4LY<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1525,7 +1523,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLm6eAAD",
     "cert_desc":"8 St Paul's Street<br />8 St Paul's Street<br />LS1 2LE<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1561,7 +1559,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLm7DAAT",
     "cert_desc":"Central House<br />Central House\nOtley Road<br />HG3 1UG<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1585,7 +1583,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLm7WAAT",
     "cert_desc":"3 Brindley Place<br />3 Brindley Place<br />B1 2JB<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1645,7 +1643,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNo0AAH",
     "cert_desc":"Aztec Centre<br />Aztec West Business Park,\nWaterside Drive,\nAlmondsbury<br />BS32 4UF<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -1669,7 +1667,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLmApAAL",
     "cert_desc":"Oozells Building<br />9 Brindley Place<br />B1 2JB<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -2821,7 +2819,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000RPDUZAA5",
     "cert_desc":"51 Moorgate<br />51 Moorgate<br />EC2R 6BH<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -2845,7 +2843,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000RPdJ9AAL",
     "cert_desc":"23 Kingsway<br />York House\n23 Kingsway<br />WC2B 6UJ<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -2905,7 +2903,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNp3AAH",
     "cert_desc":"HYDE<br />38 Clarendon Road<br />WD17 1HZ<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -2941,7 +2939,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jR7YAAU",
     "cert_desc":"Greencoat House<br />Francis Street<br />SW1P 1DH<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -3013,7 +3011,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLm8HAAT",
     "cert_desc":"338 Euston Road<br />338 Euston Road<br />NW1 3JN<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -3097,7 +3095,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLmBHAA1",
     "cert_desc":"155 Bishopsgate<br />155 Bishopsgate<br />EC2M 3TQ<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -3109,7 +3107,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLmBZAA1",
     "cert_desc":"77 Kingsway<br />77 Kingsway<br />WC2B 6SR<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -3289,7 +3287,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRphAAH",
     "cert_desc":"Old Change House<br />128 Queen Victoria Street<br />EC4V 4BJ<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -3301,7 +3299,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRpsAAH",
     "cert_desc":"25 Victoria Street<br />25 Victoria Street<br />SW1H 0EX<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -3385,7 +3383,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000006yJIGAA2",
     "cert_desc":"Ossory House<br />Leeson Street Lower<br />D2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -3529,7 +3527,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLm9ZAAT",
     "cert_desc":"Building 1220<br />Arlington Business Park<br />RG7 4SA<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -3589,7 +3587,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRoLAAX",
     "cert_desc":"Building 1330<br />Arlington Business Park<br />RG7 4SA<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -3637,7 +3635,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0060Y00000Bi55zQAB",
     "cert_desc":"Two Ruskin Square<br />2 Ruskin Square<br />CR0 1XJ<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4117,7 +4115,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JJt5bAAD",
     "cert_desc":"10 Maguire Road<br />10 Maguire Road<br />02421<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4129,7 +4127,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JKB0XAAX",
     "cert_desc":"420 Rutherford Ave<br />420 Rutherford Avenue<br />02129<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4309,7 +4307,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000IL0xmAAD",
     "cert_desc":"2100 Pennsylvania Avenue Northwest<br />2100 Pennsylvania Avenue Northwest<br />20037<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4321,7 +4319,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Pe1ztAAB",
     "cert_desc":"12 Farnsworth St<br />12 Farnsworth Street<br />02210<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4345,7 +4343,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000OkPR4AAN",
     "cert_desc":"125 Necco St (G5)<br />125 Necco Street<br />02210<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4573,7 +4571,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JVBdnAAH",
     "cert_desc":"1 Alewife Center<br />1 Alewife Center<br />02140<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4621,7 +4619,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JX9Z9AAL",
     "cert_desc":"5 MLK - Office<br />5 NE Martin Luther King Jr Blvd<br />97214<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4633,7 +4631,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000FFseAAAT",
     "cert_desc":"100 Cambridge Park Drive<br />100 Cambridgepark Drive<br />02140<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4645,7 +4643,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000FFseBAAT",
     "cert_desc":"150 Cambridgepark Drive<br />150 Cambridgepark Drive<br />02140<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4729,7 +4727,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0065q000002IPSTAA4",
     "cert_desc":"313 Pleasant St- Office Occupied<br />313 Pleasant Street<br />02472<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4789,7 +4787,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TlVLMAA3",
     "cert_desc":"7930 Jones Branch Drive<br />7930 Jones Branch Drive<br />22102<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4825,7 +4823,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TlVc0AAF",
     "cert_desc":"925 15th St NW<br />925 15th Street Northwest<br />20005<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4885,7 +4883,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLMxvAAH",
     "cert_desc":"6 Tide St<br />6 Tide Street<br />02210<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4933,7 +4931,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNDHAA5",
     "cert_desc":"801 K Street<br />801 K Street<br />95814<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4945,7 +4943,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNE7AAP",
     "cert_desc":"915 L Street<br />915 L Street<br />95814<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4981,7 +4979,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN49AAH",
     "cert_desc":"101 Derby Street<br />101 Derby Street<br />02043<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -4993,7 +4991,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN4rAAH",
     "cert_desc":"12 Post Office Sq<br />12 Post Office Square<br />02109<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -5005,7 +5003,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN5FAAX",
     "cert_desc":"125 Mount Auburn Street<br />125 Mount Auburn Street<br />02138<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -5029,7 +5027,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN62AAH",
     "cert_desc":"144 Gould Street<br />144 Gould Street<br />02494<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -5125,7 +5123,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN8uAAH",
     "cert_desc":"3 Forbes Road<br />3 Forbes Road<br />02421<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -5161,7 +5159,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNBZAA5",
     "cert_desc":"55 Chapel St<br />55 Chapel Street<br />02458<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -5185,7 +5183,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNBvAAP",
     "cert_desc":"60 First Avenue<br />60 1st Avenue<br />02451<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -5245,7 +5243,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRkeAAH",
     "cert_desc":"100 Acorn Park Drive<br />100 Acorn Park Drive<br />02140<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -5257,7 +5255,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Oi2R4AAJ",
     "cert_desc":"10 Liberty Sq<br />10 Liberty Square<br />02109<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -5269,7 +5267,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000003c74aAAA",
     "cert_desc":"401 South Graham Street<br />401 South Graham Street<br />28202<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -5521,7 +5519,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0060Y00000GAUotQAH",
     "cert_desc":"3 West 29th Street<br />3 West 29th Street<br />10001<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -5545,7 +5543,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061n00000Vk8Z3AAJ",
     "cert_desc":"501 Fayetteville Street<br />501 Fayetteville Street<br />27601<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6157,7 +6155,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000KnVQXAA3",
     "cert_desc":"1316 Adams Street<br />1316 Adams Street<br />37208<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6169,7 +6167,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000KnVQcAAN",
     "cert_desc":"1312 Adams Street<br />1312 Adams Street<br />37208<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6277,7 +6275,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000PeECOAA3",
     "cert_desc":"95 Greene Street<br />95 Greene Street<br />07302<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6409,7 +6407,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i0000070zIIAAY",
     "cert_desc":"215 Spadina Ave<br />215 Spadina Avenue<br />M5T 2C7<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6433,7 +6431,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AcxvzAAB",
     "cert_desc":"470 West Avenue<br />470 West Avenue<br />06902<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6493,7 +6491,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000702tOAAQ",
     "cert_desc":"11010 101 Street<br />11010 101 Street Northwest<br />T5H 2T1<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6517,7 +6515,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000702ugAAA",
     "cert_desc":"11044 82nd Avenue<br />11044 82 Avenue Northwest<br />T6G 0T2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6565,7 +6563,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000702vQAAQ",
     "cert_desc":"2675 36th Street NE<br />2675 36 Street Northeast<br />T1Y 6H6<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6589,7 +6587,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000005rvU7AAI",
     "cert_desc":"3017 66th Street<br />3017 66 Street Northwest<br />T6K 4B2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6601,7 +6599,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000005rvUCAAY",
     "cert_desc":"1201 Glenmore Trail S.W.<br />1201 Southwest Glenmore Trail<br />T2V 4Y8<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6649,7 +6647,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MfPi7AAF",
     "cert_desc":"2245 Texas Drive<br />2245 Texas Drive<br />77478<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6661,7 +6659,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000003az82AAA",
     "cert_desc":"2001 Spring Road<br />2100 Spring Road<br />60523<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6709,7 +6707,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0060Y00000Bk095QAB",
     "cert_desc":"120 South Riverside Plaza<br />120 South Riverside Plaza<br />60606<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6721,7 +6719,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MgYqmAAF",
     "cert_desc":"2525 West End Avenue<br />2525 West End Avenue<br />37203<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6733,7 +6731,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000003az8lAAA",
     "cert_desc":"2021 Spring Road<br />2021 Spring Road<br />60523<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6757,7 +6755,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0060Y00000Bk0JSQAZ",
     "cert_desc":"25 Thomson Place<br />25 Thomson Place<br />02210<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6793,7 +6791,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0060Y00000Bk0LqQAJ",
     "cert_desc":"1800 Bering Drive<br />1800 Bering Drive<br />77057<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6805,7 +6803,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0060Y00000Bk0MRQAZ",
     "cert_desc":"515 Congress Avenue<br />515 Congress Avenue<br />78701<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6817,7 +6815,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MfPkIAAV",
     "cert_desc":"2277 Plaza Drive<br />2277 Plaza Drive<br />77479<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6829,7 +6827,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MfQppAAF",
     "cert_desc":"2150 Town Square Place<br />2150 Town Square Place<br />77479<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6853,7 +6851,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MfkP1AAJ",
     "cert_desc":"305 Church at North Hills Street<br />305 Church at North Hills Street<br />27609<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6865,7 +6863,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MflJSAAZ",
     "cert_desc":"2200 West Main Street<br />2200 West Main Street<br />27705<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6877,7 +6875,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Mh4geAAB",
     "cert_desc":"2020 Main Street<br />2020 Main Street<br />92614<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6889,7 +6887,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Mh4hNAAR",
     "cert_desc":"4300 Wilson Blvd<br />4300 Wilson Boulevard<br />22203<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -6997,7 +6995,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Mf5XlAAJ",
     "cert_desc":"825 Town and Country Lane<br />825 Town & Country Lane<br />77024<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7057,7 +7055,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLFMaAAP",
     "cert_desc":"7201 East Henkel Way<br />7201 East Henkel Way<br />85255<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7093,7 +7091,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DJIlGAAX",
     "cert_desc":"1100 Wayne Avenue<br />1100 Wayne Avenue<br />20910<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7129,7 +7127,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LKVcbAAH",
     "cert_desc":"17911 Von Karman Avenue<br />17911 Von Karman Avenue<br />92614<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7189,7 +7187,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000IMS5hAAH",
     "cert_desc":"1480 64th Street<br />1480 64th Street<br />94608<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7201,7 +7199,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000IMSUwAAP",
     "cert_desc":"1385 Broadway<br />1385 Broadway<br />10018<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7261,7 +7259,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000FgvQ3AAJ",
     "cert_desc":"590 Fifth Avenue<br />590 5th Avenue<br />10036<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7321,7 +7319,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JTd9tAAD",
     "cert_desc":"1050 SW 6th Avenue<br />1050 Southwest 6th Avenue<br />97204<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7345,7 +7343,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JTh68AAD",
     "cert_desc":"14 53rd Street<br />14 53rd Street<br />11232<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7381,7 +7379,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HbdVBAAZ",
     "cert_desc":"8200 West Interstate 10<br />West Interstate 10 Frontage Road<br />78230<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7393,7 +7391,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HcW2jAAF",
     "cert_desc":"460 Park Avenue<br />460 Park Avenue<br />10022<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7405,7 +7403,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HcfBrAAJ",
     "cert_desc":"3700 Glenwood Ave.<br />3700 Glenwood Avenue<br />27612<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7417,7 +7415,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HcfCGAAZ",
     "cert_desc":"3800 Glenwood Ave.<br />3800 Glenwood Avenue<br />27612<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7453,7 +7451,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HcwQTAAZ",
     "cert_desc":"4200 Six Forks Road<br />4200 Six Forks Road<br />27609<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7573,7 +7571,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000IKFtuAAH",
     "cert_desc":"20 Enterprise<br />20 Enterprise<br />92656<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7633,7 +7631,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000FFsePAAT",
     "cert_desc":"225 Reinekers Lane<br />225 Reinekers Lane<br />22314<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7645,7 +7643,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000ILzCTAA1",
     "cert_desc":"One University Place<br />1 University Place<br />28262<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7669,7 +7667,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Mf5XWAAZ",
     "cert_desc":"621 SW Morrison St.<br />621 Southwest Morrison Street<br />97209<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7681,7 +7679,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MfEXNAA3",
     "cert_desc":"385 Interlocken Crescent<br />385 Interlocken Crescent<br />80021<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7705,7 +7703,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Ok72jAAB",
     "cert_desc":"430 West 15th Street<br />430 West 15th Street<br />10011<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7849,7 +7847,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MeVN5AAN",
     "cert_desc":"111 E Sego Lily Drive<br />111 East Sego Lily Drive<br />84070<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7861,7 +7859,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MeVNAAA3",
     "cert_desc":"9490 South 300 West<br />9490 South 300 West<br />84070<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7873,7 +7871,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000OjlNoAAJ",
     "cert_desc":"75 Hawthorne Street<br />75 Hawthorne Street<br />94105<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7885,7 +7883,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000PdxBIAAZ",
     "cert_desc":"4151 Ashford<br />4151 Ashford Dunwoody Road Northeast<br />30319<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7945,7 +7943,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TlVgyAAF",
     "cert_desc":"1750 Pennsylvania Ave NW<br />1750 Pennsylvania Avenue Northwest<br />20006<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7957,7 +7955,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TlcxBAAR",
     "cert_desc":"4000 Legato Road<br />4000 Legato Road<br />22033<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7969,7 +7967,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TlcyOAAR",
     "cert_desc":"4050 Legato Road<br />4050 Legato Road<br />22033<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -7981,7 +7979,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TldTbAAJ",
     "cert_desc":"750 17th St. NW<br />750 17th Street Northwest<br />20006<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8029,7 +8027,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TnAzYAAV",
     "cert_desc":"505 9th Street<br />500 8th Street Northwest<br />20004<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8053,7 +8051,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TnmXrAAJ",
     "cert_desc":"12220 El Camino Real<br />12220 El Camino Real<br />92130<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8077,7 +8075,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TnmcSAAR",
     "cert_desc":"12230 El Camino Real<br />12230 El Camino Real<br />92130<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8089,7 +8087,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000ToEiqAAF",
     "cert_desc":"12481 High Bluff Drive<br />12481 High Bluff Drive<br />92130<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8113,7 +8111,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jQfJAAU",
     "cert_desc":"140 Oxford Street<br />140 Oxford Street East<br />N6A 5R9<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8125,7 +8123,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jQfbAAE",
     "cert_desc":"20 Wynford Drive<br />20 Wynford Drive<br />M3C 1W1<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8197,7 +8195,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN7eAAH",
     "cert_desc":"201 California Street<br />201 California Street<br />94111<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8281,7 +8279,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004l6CLAAY",
     "cert_desc":"700 K Street NW<br />700 K Street Northwest<br />20001<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8497,7 +8495,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jQokAAE",
     "cert_desc":"178 South Rio Grande Street<br />178 South Rio Grande Street<br />84101<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8653,7 +8651,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLND8AAP",
     "cert_desc":"80 M Street SE<br />80 M Street Southeast<br />20003<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8869,7 +8867,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLMygAAH",
     "cert_desc":"Park Center I<br />5200 Virginia Way<br />37027<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -8881,7 +8879,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLMyhAAH",
     "cert_desc":"Park Center II<br />5200 Virginia Way<br />37027<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -9169,7 +9167,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzlrAAD",
     "cert_desc":"180 Madison Avenue<br />180 Madison Avenue<br />10016<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -9325,7 +9323,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN4GAAX",
     "cert_desc":"1055 East Colorado Boulevard<br />1055 East Colorado Boulevard<br />91106<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -9349,7 +9347,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzm1AAD",
     "cert_desc":"1919 North Lynn Street<br />1919 North Lynn Street<br />22209<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -9589,7 +9587,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzjEAAT",
     "cert_desc":"2600 Network Blvd<br />2600 network blvd<br />75034<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -9661,7 +9659,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzpHAAT",
     "cert_desc":"490 Arsenal Street<br />490 Arsenal Way<br />02472<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -9733,7 +9731,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzmRAAT",
     "cert_desc":"2121 Cooperative Way<br />2121 Cooperative Way<br />20171<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -9781,7 +9779,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzmYAAT",
     "cert_desc":"2275 Research Boulevard<br />2275 Research Boulevard<br />20850<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -9817,7 +9815,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzmvAAD",
     "cert_desc":"2411 Dulles Corner Park<br />2411 Dulles Corner Park<br />20171<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -9841,7 +9839,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzn4AAD",
     "cert_desc":"24 West 57th Street<br />24 West 57th Street<br />10019<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -9961,7 +9959,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN5LAAX",
     "cert_desc":"130 Bloor Street West<br />130 Bloor Street West<br />M5S 1N5<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -9973,7 +9971,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN5MAAX",
     "cert_desc":"130 Slater Street<br />130 Ottawa 40<br />K1P<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10045,7 +10043,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzjvAAD",
     "cert_desc":"100 Peachtree Street NW<br />100 Peachtree Street Northwest<br />30303<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10093,7 +10091,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzkAAAT",
     "cert_desc":"1071 Avenue of the Americas<br />1071 6th Avenue<br />10018<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10105,7 +10103,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzkEAAT",
     "cert_desc":"10 Bank Street<br />10 Bank Street<br />10606<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10225,7 +10223,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzq2AAD",
     "cert_desc":"589 Fifth Avenue<br />589 5th Avenue<br />10017<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10261,7 +10259,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzqJAAT",
     "cert_desc":"601 New Jersey Avenue NW<br />601 New Jersey Avenue Northwest<br />20001<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10285,7 +10283,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzqYAAT",
     "cert_desc":"636 Avenue of the Americas<br />636 6th Avenue<br />10011<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10453,7 +10451,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzneAAD",
     "cert_desc":"3001 Washington Boulevard<br />3001 Washington Boulevard<br />22201<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10657,7 +10655,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzkVAAT",
     "cert_desc":"11100 NE 8th Street<br />11100 Northeast 8th Street<br />98004<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10753,7 +10751,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzkhAAD",
     "cert_desc":"1156 Avenue of the Americas<br />1156 6th Avenue<br />10036<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10789,7 +10787,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzqsAAD",
     "cert_desc":"6801 Gaylord Parkway<br />6801 Gaylord Parkway<br />75034<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10813,7 +10811,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzqzAAD",
     "cert_desc":"7101 Wisconsin Avenue<br />7101 Wisconsin Avenue<br />20814<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10909,7 +10907,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLznuAAD",
     "cert_desc":"300 South Wacker Drive<br />300 South Wacker Drive<br />60606<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10921,7 +10919,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLznvAAD",
     "cert_desc":"3010 Gaylord Pkwy<br />3010 Gaylord Parkway<br />75034<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -10933,7 +10931,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLznwAAD",
     "cert_desc":"3011 Internet Blvd<br />3011 Internet Boulevard<br />75034<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11101,7 +11099,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN71AAH",
     "cert_desc":"19 West 44th Street<br />19 West 44th Street<br />10036<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11209,7 +11207,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzrLAAT",
     "cert_desc":"801 Nicollet Mall<br />801 Nicollet Mall<br />55402<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11281,7 +11279,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzodAAD",
     "cert_desc":"360 Lexington Avenue<br />360 Lexington Avenue<br />10017<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11305,7 +11303,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzogAAD",
     "cert_desc":"383 Main Avenue<br />383 Main Avenue<br />06851<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11473,7 +11471,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN7aAAH",
     "cert_desc":"2001 Clayton Road<br />2001 Clayton Road<br />94520<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11545,7 +11543,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzl4AAD",
     "cert_desc":"1250 South Capital of Texas Highway<br />1250 South Capital of Texas Highway<br />78746<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11701,7 +11699,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzrrAAD",
     "cert_desc":"9300 Lee Highway<br />9300 Lee Highway<br />22031<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11713,7 +11711,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzrsAAD",
     "cert_desc":"9302 Lee Highway<br />9302 Lee Highway<br />22031<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11749,7 +11747,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzs6AAD",
     "cert_desc":"80 Southwest 8th Street<br />80 Southwest 8th Street<br />33130<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11773,7 +11771,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzoyAAD",
     "cert_desc":"4121 Wilson Boulevard<br />4121 Wilson Boulevard<br />22203<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11869,7 +11867,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN7vAAH",
     "cert_desc":"2025 First Ave<br />2025 1st Avenue<br />98121<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11881,7 +11879,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNCKAA5",
     "cert_desc":"6363 Walker Lane<br />6363 Walker Lane<br />22310<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -11917,7 +11915,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN85AAH",
     "cert_desc":"218 West 40th Street<br />218 West 40th Street<br />10018<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12097,7 +12095,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzlUAAT",
     "cert_desc":"1601 Market Street<br />1601 Market Street<br />19103<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12133,7 +12131,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzlZAAT",
     "cert_desc":"1700 Broadway<br />1700 Broadway<br />80290<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12193,7 +12191,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzleAAD",
     "cert_desc":"1730 Minor Avenue<br />1730 Minor Avenue<br />98101<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12205,7 +12203,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzsKAAT",
     "cert_desc":"Kierland Corporate Center II<br />70 East Greenway Road<br />85254<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12265,7 +12263,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN8qAAH",
     "cert_desc":"27 Drydock Avenue<br />27 Drydock Avenue<br />02210<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12325,7 +12323,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN8xAAH",
     "cert_desc":"300 Campus Drive<br />300 Campus Drive<br />07932<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12733,7 +12731,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNBHAA5",
     "cert_desc":"501 East Kennedy<br />501 East Kennedy Boulevard<br />33602<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12841,7 +12839,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNBWAA5",
     "cert_desc":"545 Madison Avenue<br />545 Madison Avenue<br />10022<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12901,7 +12899,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNBgAAP",
     "cert_desc":"560 Lexington Avenue<br />560 Lexington Avenue<br />10022<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12913,7 +12911,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNCJAA5",
     "cert_desc":"6361 Walker Lane<br />6361 Walker Lane<br />22310<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12961,7 +12959,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNBnAAP",
     "cert_desc":"58-64 West 40th Street<br />58 West 40th Street<br />10018<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -12985,7 +12983,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNBpAAP",
     "cert_desc":"5949 Sherry Lane<br />5949 Sherry Lane<br />75225<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13033,7 +13031,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNBzAAP",
     "cert_desc":"600 North Westshore Blvd<br />600 North Westshore Boulevard<br />33609<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13357,7 +13355,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DJC9VAAX",
     "cert_desc":"837 Beatty St<br />837 Beatty Street<br />V6B 2M6<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13393,7 +13391,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JTN0lAAH",
     "cert_desc":"Discovery Square 2<br />209 5th Avenue Southwest<br />55902<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13465,7 +13463,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AcinxAAB",
     "cert_desc":"1801 avenue McGill College<br />1801 Avenue McGill College<br />H3A 1Z4<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13477,7 +13475,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AciogAAB",
     "cert_desc":"1800 avenue McGill College<br />1800 Avenue McGill College<br />H3A 3J6<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13489,7 +13487,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AcipKAAR",
     "cert_desc":"1555 rue Peel Street<br />1555 Rue Peel<br />H3A 1T5<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13609,7 +13607,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000IMKQFAA5",
     "cert_desc":"3030 boulevard Le Carrefour<br />3030 Boulevard le Carrefour<br />H7T 2P5<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13645,7 +13643,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MhDj0AAF",
     "cert_desc":"150 St. Catherine - East Tower<br />150 Rue Sainte-Catherine Ouest<br />H5B 0A5<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13657,7 +13655,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000PfP1oAAF",
     "cert_desc":"195 The West Mall<br />195 The West Mall<br />M9C 5K1<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13873,7 +13871,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DmxIUAAZ",
     "cert_desc":"Broadway West<br />1300 Godward Street Northeast<br />55413<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13885,7 +13883,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DmxIeAAJ",
     "cert_desc":"Broadway East<br />3433 Broadway Street Northeast<br />55413<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13921,7 +13919,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Acie7AAB",
     "cert_desc":"8188 & 8232 Manitoba Street<br />8818 Manitoba Street<br />V5X 2X1<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13933,7 +13931,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AdM92AAF",
     "cert_desc":"Gare Viger<br />755 Rue Berri<br />H2Y 3E5<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13957,7 +13955,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HcbhKAAR",
     "cert_desc":"120 Victoria St. South<br />120 Victoria Street South<br />N2G 2B3<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13981,7 +13979,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JKZnYAAX",
     "cert_desc":"1280 Burrard St<br />1280 Burrard Street<br />V6Z 1Z1<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -13993,7 +13991,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i0000070zI0AAI",
     "cert_desc":"Westmount Shopping Centre<br />785 Wonderland Rd S<br />N6K 1M6<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14065,7 +14063,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AcK1CAAV",
     "cert_desc":"5397 Eglinton Ave W<br />5397 Eglinton Avenue West<br />M9C 5K6<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14077,7 +14075,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AcK1gAAF",
     "cert_desc":"5399 Eglinton Ave W<br />5399 Eglinton Avenue West<br />M9C 5K6<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14089,7 +14087,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AcK1qAAF",
     "cert_desc":"5401 Eglinton Ave W<br />5401 Eglinton Avenue West<br />M9C 5K6<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14101,7 +14099,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AcK20AAF",
     "cert_desc":"5403 Eglinton Ave W<br />5403 Eglinton Avenue West<br />M9C 5K6<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14113,7 +14111,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AcK2UAAV",
     "cert_desc":"5407 Eglinton Ave W<br />5407 Eglinton Avenue West<br />M9C 5K6<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14125,7 +14123,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AcK21AAF",
     "cert_desc":"5409 Eglinton Ave W<br />5409 Eglinton Avenue West<br />M9C 5K6<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14137,7 +14135,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AcK25AAF",
     "cert_desc":"5405 Eglinton Ave W<br />5405 Eglinton Avenue West<br />M9C 5K6<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14149,7 +14147,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000ToIj9AAF",
     "cert_desc":"450 SW Marine Drive<br />450 Southwest Marine Drive<br />V5X 4V2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14209,7 +14207,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CMD9UAAX",
     "cert_desc":"45 Sheppard Ave E<br />45 Sheppard Avenue East<br />M2N 5W9<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14221,7 +14219,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CMD9ZAAX",
     "cert_desc":"47 Sheppard Ave E<br />47 Sheppard Avenue East<br />M2N 0H2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14257,7 +14255,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LJI9gAAH",
     "cert_desc":"1655 Dupont Street<br />1655 Dupont Street<br />M6P 3S9<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14281,7 +14279,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LL1tFAAT",
     "cert_desc":"22 St Clair Avenue East<br />22 Saint Clair Avenue East<br />M1L 4T9<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14317,7 +14315,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DnBRlAAN",
     "cert_desc":"10025 102A Avenue NW<br />10025 102A Avenue Northwest<br />T5J 0Y2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14329,7 +14327,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DnBS0AAN",
     "cert_desc":"10205 101 Street NW<br />10205 101 Street Northwest<br />T5J 2Y9<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14341,7 +14339,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DnBS1AAN",
     "cert_desc":"10088 102 Avenue NW<br />10088 102 Avenue<br />T5J 0E7<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14365,7 +14363,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JWDG0AAP",
     "cert_desc":"600 Parkway<br />600 Kellwood Parkway<br />63017<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14377,7 +14375,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JWDG5AAP",
     "cert_desc":"Highlands Plaza one<br />1001 Highlands Plaza Drive<br />63110<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14389,7 +14387,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JWDGAAA5",
     "cert_desc":"Bemiston Tower<br />231 South Bemiston Avenue<br />63105<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14401,7 +14399,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JWDGKAA5",
     "cert_desc":"CIBC Place<br />1401 South Brentwood Boulevard<br />63144<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14557,7 +14555,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000OjxQDAAZ",
     "cert_desc":"11150 Jasper Ave<br />11150 Jasper Avenue<br />T5K 2V2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14617,7 +14615,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TldYxAAJ",
     "cert_desc":"1410 Blair Towers Place<br />1410 Blair Towers Place<br />K1J 9B9<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14629,7 +14627,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TldZ2AAJ",
     "cert_desc":"1420 Blair Towers Place<br />1420 Blair Towers Place<br />K1J 9L8<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14641,7 +14639,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Tle1dAAB",
     "cert_desc":"1430 Blair Towers Place<br />1430 Blair Towers Place<br />K1J 9N2<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14653,7 +14651,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Tli9hAAB",
     "cert_desc":"3755 Riverside Drive - Tower 1<br />3755 Riverside Drive<br />K1V 1B8<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14665,7 +14663,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TliDcAAJ",
     "cert_desc":"3755 Riverside Drive - Tower 2<br />3755 Riverside Drive<br />K1V 1B8<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14749,7 +14747,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN3UAAX",
     "cert_desc":"10 King Street East<br />10 King Street East<br />M5C<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -14773,7 +14771,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN47AAH",
     "cert_desc":"101 Bloor Street West<br />101 Bloor Street West<br />M5S 3L3<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15037,7 +15035,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLzlVAAT",
     "cert_desc":"1601 Telesat Court<br />1601 Telesat Court<br />K1B 1B9<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15049,7 +15047,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLN9PAAX",
     "cert_desc":"330 Portage Ave<br />330 Portage Avenue<br />R3C 0C3<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15265,7 +15263,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Ae0DaAAJ",
     "cert_desc":"Monceau Jadin<br />7 Rue Jadin<br />75017<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15277,7 +15275,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AeCvQAAV",
     "cert_desc":"UX<br />150 Boulevard Victor Hugo<br />93400<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15289,7 +15287,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AbekzAAB",
     "cert_desc":"Pong<br />42 Rue Cambronne<br />75015<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15337,7 +15335,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AdXQCAA3",
     "cert_desc":"WE Ilot 1<br />61 Avenue Jules Quentin<br />92000<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15349,7 +15347,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AdXQbAAN",
     "cert_desc":"WE Ilot 2<br />61 Avenue Jules Quentin<br />92000<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15361,7 +15359,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Ae6pGAAR",
     "cert_desc":"Wonder Building<br />122 Avenue Gallieni<br />93170<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15373,7 +15371,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0060Y00000CULmjQAH",
     "cert_desc":"Landscape (Tours Pascal)<br />Place des Degrés<br />92800<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15493,7 +15491,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000003b4DTAAY",
     "cert_desc":"Toko<br />Rue d'Héliopolis<br />75017<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15529,7 +15527,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000003bPVDAA2",
     "cert_desc":"Emblem (Tour Cèdre)<br />7 Allée de l'Arche<br />92400<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15637,7 +15635,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0060Y00000NGXlsQAH",
     "cert_desc":"Evidence N8A<br />Rue Simone Veil<br />93400<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15673,7 +15671,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jnkKAAQ",
     "cert_desc":"EUGENE<br />3 rue Scribe<br />75009<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15757,7 +15755,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000006zQy6AAE",
     "cert_desc":"69-71 Miromesnil<br />69 Rue de Miromesnil<br />75008<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15793,7 +15791,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000TlZ8hAAF",
     "cert_desc":"Links Park 2<br />9 Rue Archimède<br />33700<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15805,7 +15803,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000005sFVnAAM",
     "cert_desc":"Tribeca (Lot A La Chapelle)<br />63 Rue de la Chapelle<br />75018<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15829,7 +15827,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000006yeA1AAI",
     "cert_desc":"104 Richelieu<br />104 Rue de Richelieu<br />75002<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15841,7 +15839,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000006yeXwAAI",
     "cert_desc":"Air (Square Chaptal)<br />2/10 Rue Chaptal<br />92300<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15877,7 +15875,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000006xJ2VAAU",
     "cert_desc":"VISION SEINE<br />18 Rue de l'Industrie<br />92400<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15889,7 +15887,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000005FZpbAAG",
     "cert_desc":"Anthos<br />33 Avenue Emile Zola<br />92100<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15913,7 +15911,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000005FZulAAG",
     "cert_desc":"Biopark<br />8 Rue de la Croix Jarry<br />75013<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15925,7 +15923,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000006xTkcAAE",
     "cert_desc":"Kara - Lot C<br />61 Rue de la Chapelle<br />75018<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15937,7 +15935,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0060Y00000C9jZnQAJ",
     "cert_desc":"Tours Duo<br />Boulevard du Général d'Armée Jean Simon<br />75013<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15949,7 +15947,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DJFmwAAH",
     "cert_desc":"81 Taitbout<br />81 Rue Taitbout<br />75009<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15961,7 +15959,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CMB9KAAX",
     "cert_desc":"Totem<br />1 Rue Pascal<br />69100<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15973,7 +15971,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CMB9PAAX",
     "cert_desc":"LA SUITE<br />47 Rue d'Enghien<br />75010<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -15997,7 +15995,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LJYtAAAX",
     "cert_desc":"Le Prélude<br />27 Avenue du Général Leclerc<br />92100<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16093,7 +16091,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LKz7bAAD",
     "cert_desc":"Atelier Salneuve<br />9 Rue Salneuve<br />75017<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16117,7 +16115,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000INwjMAAT",
     "cert_desc":"Le Passage<br />27 Rue Cuvier<br />93100<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16177,7 +16175,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000GJMyYAAX",
     "cert_desc":"Made in Saint Ouen<br />69 rue du docteur Bauer, Saint-Ouen 93400, France<br />93400<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16189,7 +16187,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000GIdiBAAT",
     "cert_desc":"Sensorium<br />Site du Tir à l'Arc, rue Paul Doumer<br />59110<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16273,7 +16271,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HcwH7AAJ",
     "cert_desc":"Imagine<br />9 avenue Franklin<br />78180<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16297,7 +16295,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Dn3wLAAR",
     "cert_desc":"74JDM<br />74 Rue Joseph de Maistre<br />75018<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16321,7 +16319,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Dn7Z2AAJ",
     "cert_desc":"34 Courcelles<br />34 Boulevard de Courcelles<br />75017<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16357,7 +16355,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JVxvtAAD",
     "cert_desc":"Konnexion<br />32 Rue Pierre Rigaud<br />94200<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16369,7 +16367,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JVxxVAAT",
     "cert_desc":"Odissy<br />12 Boulevard Garibaldi<br />92130<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16429,7 +16427,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000PeMcdAAF",
     "cert_desc":"Immeuble ILO<br />123 Boulevard de Grenelle<br />75015<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16441,7 +16439,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000PfttGAAR",
     "cert_desc":"Wellcome<br />8 Rue Paul Vaillant Couturier<br />92320<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16453,7 +16451,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000PgzZIAAZ",
     "cert_desc":"26 Ordener<br />26 Rue Ordener<br />75018<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16501,7 +16499,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061n00000U3eyyAAB",
     "cert_desc":"New Age<br />141 cours Gambetta<br />69003<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16573,7 +16571,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004lejXAAQ",
     "cert_desc":"220 Recherche<br />220 Avenue de la Recherche<br />59120<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16597,7 +16595,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000SF1M1AAL",
     "cert_desc":"7 Messine<br />7 Avenue de Messine<br />75008<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16801,7 +16799,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HbmyIAAR",
     "cert_desc":"Totem Marseille<br />40 BOULEVARD DUNKERQUE<br />13002<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16813,7 +16811,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HcwOEAAZ",
     "cert_desc":"6 Bateliers<br />6 Rue des Bateliers<br />92110<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16837,7 +16835,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HcwQ4AAJ",
     "cert_desc":"16 Antonin Raynaud<br />16 Rue Antonin Raynaud<br />92300<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16873,7 +16871,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HcwWWAAZ",
     "cert_desc":"4 Paul Marcel<br />4 rue Paul Marcel<br />44000<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16909,7 +16907,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000KpPRyAAN",
     "cert_desc":"JAVEL<br />141 Rue de Javel<br />75015<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -16921,7 +16919,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DnymuAAB",
     "cert_desc":"LE SPOT<br />122, boulevard Victor Hugo<br />93400<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17089,7 +17087,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jQg6AAE",
     "cert_desc":"36 Naples<br />36 Rue de Naples<br />75008<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17113,7 +17111,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000003ahKqAAI",
     "cert_desc":"PB5<br />1 Avenue du Général de Gaulle<br />92800<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17149,7 +17147,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DFJ6hAAH",
     "cert_desc":"IBOX<br />5 Rue Van Gogh<br />75012<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17245,7 +17243,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLm1bAAD",
     "cert_desc":"Tour Initiale<br />1 Terrasse Bellini<br />92800<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17341,7 +17339,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRhAAAX",
     "cert_desc":"14 Place de la Coupole<br />14 Place de la Coupole<br />94220<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17365,7 +17363,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRhHAAX",
     "cert_desc":"Le Plaza<br />43 Rue de la Brèche aux Loups<br />75012<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17389,7 +17387,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRhQAAX",
     "cert_desc":"70 Rue Marius Aufan<br />70 Rue Marius Aufan<br />92300<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17437,7 +17435,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRi3AAH",
     "cert_desc":"Le César<br />20 Place Louis Pradel<br />69001<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17569,7 +17567,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRhDAAX",
     "cert_desc":"Horizon Défense II<br />28 Rue de Verdun<br />92150<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17689,7 +17687,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0065q000002J4KuAAK",
     "cert_desc":"LAZULI - 5/7/9 Boulevard du Général De Gaulle<br />5 Boulevard du Général de Gaulle<br />92120<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17701,7 +17699,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000PgjNBAAZ",
     "cert_desc":"Clara B<br />60 Route des Dolines<br />06560<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17749,7 +17747,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Mgzc2AAB",
     "cert_desc":"110/112 BOULEVARD JEAN JAURES (BOULOGNE-BILLANCOURT)<br />110 Boulevard Jean Jaurès<br />92100<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17761,7 +17759,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MgzcMAAR",
     "cert_desc":"4/6 AVENUE DE PARIS (VINCENNES)<br />4 Avenue de Paris<br />94300<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17773,7 +17771,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MgzccAAB",
     "cert_desc":"2/14 Rue FERRUS<br />2 Rue Ferrus<br />75014<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17845,7 +17843,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRihAAH",
     "cert_desc":"ATRIUM<br />1 Avenue du Docteur Ténine<br />92160<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -17893,7 +17891,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DFJ6FAAX",
     "cert_desc":"128 FSH<br />128 Rue du Faubourg Saint-Honoré<br />75008<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -18061,7 +18059,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000AeEKwAAN",
     "cert_desc":"XLANE (Speicher/Atelier)<br />Reichenberger Straße 154<br />10999<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -18193,7 +18191,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000002wAgvAAE",
     "cert_desc":"MO26<br />Motorstraße 26<br />70499<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -18433,7 +18431,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Ac6m7AAB",
     "cert_desc":"NEXTOWER<br />Thurn-und-Taxis-Platz 6<br />60313<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -18445,7 +18443,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Ac6nKAAR",
     "cert_desc":"ABC-Str. 21<br />ABC-Straße 21<br />20354<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -18457,7 +18455,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Ac6omAAB",
     "cert_desc":"Park Tower - Bockenheimer Anlage 44/44a<br />Bockenheimer Anlage 44<br />60323<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -18565,7 +18563,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLZkxAAH",
     "cert_desc":"Theresienhöhe 30<br />Theresienhöhe 30<br />80339<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -18577,7 +18575,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DJMQhAAP",
     "cert_desc":"Stralauer Allee 4<br />Stralauer Allee 4<br />10245<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -18649,7 +18647,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000002wo4hAAA",
     "cert_desc":"Koryfeum BA1<br />Landshuter Straße 28<br />85716<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -18925,7 +18923,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Oi9xLAAR",
     "cert_desc":"Isarwork<br />Plinganserstraße 134<br />81369<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19045,7 +19043,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LJkkqAAD",
     "cert_desc":"GSG-Hof Ullsteinstraße<br />Ullsteinstraße 73<br />12109<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19141,7 +19139,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LKXuWAAX",
     "cert_desc":"Connext Mannheim<br />Salzachstraße 2-12, 13, 15-17<br />68199<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19153,7 +19151,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LKY3hAAH",
     "cert_desc":"Ritterstraße 6-7<br />Ritterstraße 6-7<br />10969<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19177,7 +19175,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LKcAsAAL",
     "cert_desc":"Regierungspräsidium Kassel<br />Am alten Stadtschloß 1<br />34117<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19189,7 +19187,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JVCmUAAX",
     "cert_desc":"Metropolishaus<br />Dammtorstraße 29-32<br />20354<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19225,7 +19223,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Ko6YXAAZ",
     "cert_desc":"Main Office<br />Kaiserleistraße 10<br />63067<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19237,7 +19235,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JWGVXAA5",
     "cert_desc":"Focus Teleport<br />Alt-Moabit 91, 91A-D, 94, 96,\n96A-D, 97, 97A-B,<br />10559<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19249,7 +19247,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000IL19HAAT",
     "cert_desc":"Böhlerstraße 69<br />Böhlerstraße 69<br />40667<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19309,7 +19307,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000MgsUKAAZ",
     "cert_desc":"Oval<br />Baseler Straße 10<br />60329<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19369,7 +19367,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Pd2ZlAAJ",
     "cert_desc":"Reese-Haus<br />Rathausmarkt 5<br />20095<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19453,7 +19451,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Oh9fpAAB",
     "cert_desc":"Umspannwerk Ampere<br />Kopenhagener Straße 58-61<br />10437<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19537,7 +19535,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNq7AAH",
     "cert_desc":"THE m.pire - Bailey Palace<br />Marcel-Breuer-Straße 2-4<br />80807<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19597,7 +19595,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNq9AAH",
     "cert_desc":"THE m.pire - Life Gallery<br />Marcel-Breuer-Straße 10<br />80807<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19609,7 +19607,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNntAAH",
     "cert_desc":"Access Tower<br />Lyoner Straße 36<br />60528<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19621,7 +19619,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNooAAH",
     "cert_desc":"Frankenstraße 3-7<br />Frankenstraße 3-7<br />20097<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19633,7 +19631,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNpEAAX",
     "cert_desc":"Leuschnerdamm 31<br />Leuschnerdamm 31<br />10999<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19669,7 +19667,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNqBAAX",
     "cert_desc":"THE m.pire - Sunshine Place<br />Marcel-Breuer-Straße 12<br />80807<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19681,7 +19679,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i000004jRG6AAM",
     "cert_desc":"Solo West<br />Guiollettstraße 48<br />60325<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19825,7 +19823,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNnwAAH",
     "cert_desc":"An den Treptowers 1<br />An den Treptowers 1<br />12435<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19837,7 +19835,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNo2AAH",
     "cert_desc":"Baierbrunner Straße 15<br />Baierbrunner Straße 15<br />81379<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19873,7 +19871,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNoQAAX",
     "cert_desc":"Carl-von-Noorden-Platz 5<br />Carl-von-Noorden-Platz 5<br />60596<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19885,7 +19883,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNojAAH",
     "cert_desc":"Emil-Nolde-Straße 7<br />Emil-Nolde-Straße 7<br />53113<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19909,7 +19907,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNorAAH",
     "cert_desc":"Gentle<br />Barckhausstraße 12-16<br />60325<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19921,7 +19919,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNotAAH",
     "cert_desc":"Gotenstraße 10 - 12<br />Gotenstraße 10 - 12<br />20097<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19945,7 +19943,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNp1AAH",
     "cert_desc":"Humboldt Carree<br />Humboldtstraße 35<br />70771<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19957,7 +19955,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000CLm9bAAD",
     "cert_desc":"Burstah Offices<br />Großer Burstah 18-32<br />20457<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -19981,7 +19979,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNpJAAX",
     "cert_desc":"Mainzer Landstraße 209 - 211<br />Mainzer Landstraße 209<br />60326<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -20017,7 +20015,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNpRAAX",
     "cert_desc":"Martin-Hoffmann-Str. 16,17,18,22<br />Martin-Hoffmann-Straße 16,17,18 und 22<br />12435<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -20077,7 +20075,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNpnAAH",
     "cert_desc":"Rosenkontor<br />Rosenstraße 16-17<br />10178<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -20197,7 +20195,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000DnSWaAAN",
     "cert_desc":"Kö - Quartier Development<br />Benrather Str. 29, Breitestr. 20, 28<br />40213<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -20221,7 +20219,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLNugAAH",
     "cert_desc":"Bockenheimer Landstraße 39<br />Bockenheimer Landstraße 39<br />60325<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -20509,7 +20507,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000IKeSUAA1",
     "cert_desc":"Cerro de los Gamos Edifico 1<br />Camino del Cerro de los Gamos 1<br />28224<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -20653,7 +20651,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LIimcAAD",
     "cert_desc":"Torre Meridian<br />Avinguda de Rio de Janeiro, 56<br />08016<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -20677,7 +20675,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000JV7YSAA1",
     "cert_desc":"Millenium Tower<br />Weena 686<br />3012 CN<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -20701,7 +20699,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000HdsD3AAJ",
     "cert_desc":"Le 4 Porte<br />Via Circonvallazione Idroscalo<br />20090<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -20809,7 +20807,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000IKeSuAAL",
     "cert_desc":"Aquamarine<br />Calle Arroyo de Valdebebas 4<br />28050<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -20989,7 +20987,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000RRmSTAA1",
     "cert_desc":"Butterfly<br />Apostolopoulou 26<br />152 31<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -21013,7 +21011,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000OkQl8AAF",
     "cert_desc":"Välmågan 9<br />Warfvinges väg 25<br />112 51<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -21037,7 +21035,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000Pd3VmAAJ",
     "cert_desc":"Safiiri<br />8 Puolikkotie<br />02230<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   },
   {
@@ -21529,7 +21527,7 @@ map.addSource('places', {
     "properties": {
     "Opportunity ID (18)":"0061i00000LLRgmAAH",
     "cert_desc":"19 Harris Street<br />19 Harris Street<br />2009<p>WiredScore Office Silver</p>",
-    "cert_color":"84959B"
+    "cert_color":"#84959B"
     }
   }
 ]
@@ -21543,7 +21541,7 @@ map.addSource('places', {
            'paint': {
                'circle-color': ['get', 'cert_color'],
                'circle-opacity': 0.75,
-               'circle-radius': 4
+               'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 8, 15, 15]
            }
        });
  
@@ -21572,11 +21570,20 @@ map.on('mouseenter', 'places', () => {
 map.getCanvas().style.cursor = 'pointer';
 });
  
-// Change it back to a pointer when it leaves.
+ 
+ // Change it back to a pointer when it leaves.
 map.on('mouseleave', 'places', () => {
 map.getCanvas().style.cursor = '';
 });
 });
+
+// Add the control to the map.
+map.addControl(
+new MapboxGeocoder({
+accessToken: mapboxgl.accessToken,
+mapboxgl: mapboxgl
+})
+);
 </script> 
   </body>
 </html>
