@@ -7,6 +7,7 @@
   <body>
     <h1>Map</h1>
     <h2>update</h2>
+    <h3>workdin?</h3>
     <div id='map' style='width: 400px; height: 300px;'></div>
     <script>
       mapboxgl.accessToken = 'pk.eyJ1Ijoid2lyZWRzY29yZXN0cHIiLCJhIjoiY2xjMGhlZ3d3MDMwODNub2RzdWU2dnM5YiJ9.YNzXLUYHiQKcUvdhjJZbkQ';
@@ -14,6 +15,23 @@
         {container: 'map',
          style: 'mapbox://styles/mapbox/streets-v11'
         });
+      map.on('load', function() {
+        map.addSource('tileset_data', 
+                      {"url": "mapbox://wiredscorestpr.clbzdrtb7099u20mky4u6f8lj-8iqvf",
+                       "type": "vector"
+                      });
+        map.addLayer({
+           'id': 'circles',
+           'type': 'circle',
+           'source': 'tileset_data',
+           'source-layer': 'Buildings',
+           'paint': {
+               'circle-color': '#7F3121',
+               'circle-opacity': 0.75,
+               'circle-radius': 5
+           }
+       });
+      });
     </script>
   </body>
 </html>
