@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "34 Farnsworth Street - Boston, MA 02210", "Median_RSRP_AT&T_non_temporal": -95.0, "Percentile_10_RSRP_AT&T_non_temporal": -96.0, "Percentile_90_RSRP_AT&T_non_temporal": -94.0, "Measured_RSRP_AT&T_non_temporal": 0, "Calculated_RSRP_AT&T_non_temporal": 100.0, "Median_RSRP_Verizon_non_temporal": -105.0, "Percentile_10_RSRP_Verizon_non_temporal": -106.0, "Percentile_90_RSRP_Verizon_non_temporal": -105.0, "Measured_RSRP_Verizon_non_temporal": 0, "Calculated_RSRP_Verizon_non_temporal": 100.0, "Median_RSRP_T-Mobile_non_temporal": -88.0, "Percentile_10_RSRP_T-Mobile_non_temporal": -88.0, "Percentile_90_RSRP_T-Mobile_non_temporal": -86.0, "Measured_RSRP_T-Mobile_non_temporal": 16.7, "Calculated_RSRP_T-Mobile_non_temporal": 83.3 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -7909092.860380069352686, 5213843.669565435498953 ], [ -7909082.529931323602796, 5213862.332773046568036 ], [ -7909046.095061986707151, 5213841.786677283234894 ], [ -7909057.538705640472472, 5213822.64149181637913 ], [ -7909092.860380069352686, 5213843.669565435498953 ] ] ] ] } }
+]
+}
